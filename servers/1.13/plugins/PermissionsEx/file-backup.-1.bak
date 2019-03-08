@@ -1,0 +1,324 @@
+groups:
+  Guest:
+    default: true
+    prefix: '&8Guest'
+    permissions:
+    - essentials.fly
+    - war.buid
+    - war.warp
+    - war.player
+    - essentials.help
+    - modifyworld.*
+    - essentials.spawn
+    - essentials.kits.garmor
+    - essentials.back
+    - essentials.kit
+    - essentials.kits.color
+    - essentials.list
+    - essentials.who
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.msg
+    - essentials.build
+    - essentials.warp
+    - essentials.delhome
+    - essentials.sethome
+    - essentials.home
+    - essentials.rules
+    - essentials.signs.use.balance
+    - essentials.signs.use.buy
+    - essentials.signs.use.sell
+    - essentials.signs.use.heal
+    - essentials.kits.starter
+    - essentials.signs.use.disposal
+    - essentials.kits.weeklyguest
+    - bm.notify
+    - bm.notify.ban
+    - bm.notify.tempban
+    - bm.notify.tempmute
+    - bm.notify.mute
+    - bm.notify.kick
+    - bm.notify.warn
+    - bm.notify.unban
+    - bm.notify.unmute
+    options:
+      rank: '1000'
+  Member:
+    prefix: '&2Member'
+    inheritance:
+    - Guest
+    permissions:
+    - essentials.fly
+    - perm.member.random
+    - essentials.warp.list
+    - essentials.mail
+    - essentials.ignore
+    - essentials.helpop
+    - essentials.pay
+    - essentials.balance
+    - essentials.seen
+    - essentials.kits.Utilities
+    - essentials.kits.iron
+    - essentials.kits.growityourselflazy
+    - betterenderchest.slots.upgrade1
+    - essentials.clearinventory
+    - essentials.worth
+    - essentials.pay
+    - essentials.kits.memberarmor
+    - essentials.kits.memberpvp
+    - essentials.kits.membertools
+    - essentials.kits.yum
+    - essentials.kits.wood
+    - essentials.kits.weeklymember
+    - essentials.signs.create.trade
+    - essentials.depth
+    - essentials.signs.use.free
+    - essentials.sethome.bed
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.member
+    - essentials.home.bed
+    - essentials.home
+    - essentials.getpos
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.seen
+    - essentials.tp
+    - essentials.tptoggle
+    - clearchat.local
+    options:
+      rank: '900'
+  VIP:
+    prefix: '&eVIP'
+    inheritance:
+    - Member
+    permissions:
+    - essentials.feed
+    - essentials.sethome.multiple.vip
+    - essentials.kits.weeklyvip
+    - essentials.signs.create.balance
+    - essentials.kits.brewer
+    - essentials.kits.Gold
+    - essentials.kits.treeplanting
+    - essentials.kits.wood
+    - essentials.pweather
+    - betterenderchest.slots.upgrade2
+    - essentials.signs.color
+    - essentials.signs.magic
+    - random.vip
+    options:
+      rank: '800'
+  Trusted:
+    prefix: '&b&oTrusted'
+    inheritance:
+    - VIP
+    permissions:
+    - clearchat.cglobal
+    - essentials.kits.enchant
+    - betterenderchest.slots.upgrade3
+    - alphachest.chest
+    - bccsc.bucket.lava
+    - essentials.hat
+    - essentials.signs.create.disposal
+    - essentials.ping
+    - essentials.kits.enderpearl
+    - essentials.kits.cpvp
+    - essentials.kits.potion
+    - essentials.kits.edtools
+    - essentials.kits.nether
+    - essentials.kits.ediamond
+    - essentials.exp
+    - essentials.ptime
+    - essentials.book
+    - essentials.joinfullserver
+    - essentials.spawnmob
+    - essentials.spawnmob.wolf
+    - essentials.spawnmob.cow
+    - essentials.spawnmob.pig
+    - essentials.tphere
+    - bm.warn
+    - essentials.tpo
+    - essentials.top
+    - essentials.gamemode
+    - permissions.manage.membership.member
+    options:
+      rank: '700'
+  Mod:
+    prefix: '&9Mod'
+    inheritance:
+    - Trusted
+    permissions:
+    - servercontrol.function.see
+    - essentials.item
+    - essentials.kits
+    - mcdocs.command.staff
+    - mcdocs.command.mod
+    - reportrts.mod
+    - reportrts.command.check
+    - reportrts.command.complete
+    - reportrts.command.complete.self
+    - reportrts.command.teleport
+    - reportrts.command.claim
+    - reportrts.command.broadcast
+    - reportrts.command.help
+    - alert.cmd.broadcast
+    - random.permmod
+    - essentials.jails
+    - essentials.kick.notify
+    - essentials.remove
+    - essentials.socialspy
+    - essentials.togglejail
+    - essentials.togglejail.offline
+    - essentials.top
+    - essentials.kits.mod
+    - logblock.lookup
+    - logblock.tp
+    - logblock.me
+    - logblock.spawnTools
+    - logblock.tools.toolblock
+    - logblock.tools.tool
+    - bm.tempban
+    - bm.tempmute
+    - bm.tempban.offline
+    - bm.warn
+    - bm.kick
+    - permissions.manage
+    - permissions.manage.membership.member
+    - permissions.manage.membership.VIP
+    - permissions.manage.membership.Guest
+    - permissions.manage.users.prefix.*
+    options:
+      rank: '600'
+  Admin:
+    prefix: '&c&oAdmin'
+    inheritance:
+    - Mod
+    permissions:
+    - clearchat.cglobal
+    - clearchat.*
+    - worldedit.biome.list
+    - worldedit.biome.info
+    - worldedit.chunkinfo
+    - worldedit.listchunks
+    - worldedit.clipboard.load
+    - worldedit.schematic.load
+    - worldedit.schematic.list
+    - worldedit.clipboard.save
+    - worldedit.clipboard.copy
+    - worldedit.clipboard.rotate
+    - worldedit.clipboard.flip
+    - worldedit.clipboard.cut
+    - worldedit.clipboard.paste
+    - worldedit.help
+    - worldedit.generation.cylinder
+    - worldedit.generation.cylinder
+    - worldedit.generation.sphere
+    - worldedit.generation.pyramid
+    - worldedit.generation.shape
+    - worldedit.history.redo
+    - worldedit.history.undo
+    - worldedit.navigation.thru.command
+    - worldedit.navigation.unstuck
+    - worldedit.navigation.jumpto.command
+    - worldedit.navigation.ceiling
+    - worldedit.navigation.up
+    - worldedit.region.hollow
+    - worldedit.region.overlay
+    - worldedit.region.naturalize
+    - worldedit.region.walls
+    - worldedit.region.faces
+    - worldedit.region.smooth
+    - worldedit.regen
+    - worldedit.region.deform
+    - worldedit.region.replace
+    - worldedit.region.stack
+    - worldedit.region.set
+    - worldedit.region.move
+    - worldedit.region.center
+    - worldedit.selection.pos
+    - worldedit.selection.pos
+    - worldedit.wand
+    - worldedit.selection.hpos
+    - worldedit.selection.hpos
+    - worldedit.selection.contract
+    - worldedit.selection.outset
+    - worldedit.selection.size
+    - worldedit.selection.expand
+    - worldedit.selection.shift
+    - worldedit.selection.inset
+    - worldedit.brush.sphere
+    - worldedit.brush.smooth
+    - worldedit.brush.gravity
+    - worldedit.brush.butcher
+    - worldedit.brush.cylinder
+    - worldedit.brush.cylinder
+    - worldedit.brush.clipboard
+    - worldedit.brush.ex
+    - worldedit.tool.deltree
+    - worldedit.fill
+    - worldedit.drain
+    - worldedit.butcher
+    - worldedit.tool.lrbuild
+    - worldedit.tool.info
+    - worldedit.tool.tree
+    - worldedit.snow
+    - worldedit.thaw
+    - worldedit.fixlava
+    - worldedit.fixwater
+    - worldedit.removeabove
+    - worldedit.removebelow
+    - worldedit.removenear
+    - worldedit.replacenear
+    - worldedit.extinguish
+    - worldedit.remove
+    - worldedit.fill
+    - worldedit.green
+    - worldedit.drain
+    - permissions.manage.users.prefix.*
+    - clearchat.local
+    - reportrts.command.ban
+    - simplyvanish.vanish.other
+    - simplyvanish.reappear.self
+    - simplyvanish.flags.display.self
+    - simplyvanish.vanish.self
+    - simplyvanish.inventories.peek.at-all
+    - simplyvanish.god.self
+    - simplyvanish.ungod.self
+    - random.admin
+    - permissions.manage.membership.Mod
+    - permissions.manage.membership.Trusted
+    - logblock.*
+    - -logblock.reload
+    - factions.admin
+    - permissions.manage.membership.S-Mod
+    - bccsc.help
+    - bccsc.motd
+    - bccsc.freeze
+    - bccsc.place.block
+    - bccsc.bucket.lava
+    - herochat.*
+    - -herochat.reload
+    - auction.admin
+    - worldguard.*
+    - -worldguard.reload
+    - clearchat.cglobal
+    - essentials.gamemode
+    - betterenderchest.command
+    - Openinv.*
+    - Simplyvanish.*
+    options:
+      rank: '100'
+  S-Admin:
+    prefix: '&4S&6-&cAdmin'
+    inheritance:
+    - Admin
+    permissions:
+    - '*'
+    options:
+      rank: '50'
+  Operator:
+    prefix: '&6&oOperator'
+    permissions:
+    - '*'
+    options:
+      rank: '1'
